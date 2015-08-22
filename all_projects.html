@@ -6,11 +6,10 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/about_me.css">
+        <link rel="stylesheet" href="css/all_projects.css">
         <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300">
-        <link rel="import" href="components/bower_components/google-map/google-map.html">
-        <title>About Me</title>
+        <title>All Projects</title>
     </head>
     
     <body>
@@ -20,7 +19,7 @@
                     <div class="col-md-6">
                         <img class="img-responsive img-rounded title-logo" src="images/my_picture.jpeg" alt="Logo">
                     </div>
-                    
+                
                     <div class="col-md-6 text-right text-uppercase">
                         <h1 class="title-super">Niko Caron</h1>
                         <h4>Front-end Apprentice</h4>
@@ -42,20 +41,27 @@
                     <div class="collapse navbar-collapse" id="hamburger">
                         <ul class="nav navbar-nav">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="all_projects.html">All Projects</a></li>
-                            <li class="active"><a href="#">About Me</a></li>
+                            <li class="active"><a href="#">All Projects</a></li>
+                            <li><a href="about-me.html">About Me</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
-            <section>
-                <p>My name is Niko, I'm from the very small town of Grand Falls, New Brunswick, Canada. Currenly, I am working in a sawmill but this is not that I plan to do forever. My true passion has always been computers and although I am new to writing code, I would love to work as a programmer. I'm currently enrolled in Udacity's Front-End Web Developer Nanodegree.</p>
-            </section>
             
-            <google-map latitude="47.048079" longitude="-67.739903" fit-to-marker zoom="15">
-                <google-map-marker latitude="47.048079" longitude="-67.739903" draggable="false"></google-map-marker>
-            </google-map>
+            <section>
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <h2>Project 1</h2>
+                        <p>Build a webpage based on a given design.</p>
+                        <picture>
+                            <source
+                                    media="(min-width: 767px)"
+                                    srcset="images/project1.jpg">
+                            <img class="img-responsive" src="images/mobile/project1-min.jpg" alt="Projet 1">
+                        </picture>
+                    </div>
+                </div>
+            </section>
             
             <footer>
                 <div class="row">
@@ -63,7 +69,7 @@
                         <hr>
                     </div>
                 </div>
-                
+            
                 <!-- TODO: add more links to other sites -->
                 <div class="row">
                     <div class="col-md-12">
@@ -72,8 +78,5 @@
                 </div>
             </footer>
         </div>
-        <script src="components/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-        <script src="js/jquery-2.1.4.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
