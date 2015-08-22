@@ -52,17 +52,12 @@ p {
     margin-top: 10px;
 }
 
-a:link {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-    color: inherit;
-}
-
 a {
     color: inherit;
+}
+
+.btn:hover {
+    color: #e64a19;
 }
 
 .carousel-placeholder {
