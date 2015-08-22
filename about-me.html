@@ -28,19 +28,27 @@
                 </div>
             </header>
             
-            <nav>
-                <ul class="nav nav-tabs">
-                    <li role="presentation"><a href="index.html">Home</a></li>
-                    <li role="presentation"><a href="#">All Projects</a></li>
-                    <li role="presentation" class="active"><a href="#">About me</a></li>
-                </ul>
-                <div class="row">
-                    <div class="col-md-12">
-                        <hr>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="hamburger">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">All Projects</a></li>
+                            <li class="active"><a href="#">About Me</a></li>
+                        </ul>
                     </div>
                 </div>
             </nav>
-            
+
             <section>
                 <p>My name is Niko, I'm from the very small town of Grand Falls, New Brunswick, Canada. Currenly, I am working in a sawmill but this is not that I plan to do forever. My true passion has always been computers and although I am new to writing code, I would love to work as a programmer. I'm currently enrolled in Udacity's Front-End Web Developer Nanodegree.</p>
             </section>
@@ -65,5 +73,7 @@
             </footer>
         </div>
         <script src="components/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

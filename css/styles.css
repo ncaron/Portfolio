@@ -18,10 +18,17 @@ body {
     font-weight: 100;
 }
 
-/* thickens the horizontal line */
-hr {
-    height: 5px;
-    background-color: #795548;
+/* makes sure everything looks nice with difference screen sizes */
+@media screen and (max-width: 991px) {
+    .title-super, h4 {
+        display: flex;
+        text-align: left;
+    }
+}
+
+/* Navbar */
+.navbar-default .navbar-nav > li > a:hover {
+    color: #e64a19;
 }
 
 /* Content */
@@ -63,6 +70,12 @@ a {
 }
 
 /* Footer */
+
+/* thickens the horizontal line */
+hr {
+    height: 5px;
+    background-color: #795548;
+}
 
 /* zocial */
 [class*="zocial-"]:before {
