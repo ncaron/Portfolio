@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/about_me.css">
+        <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300">
+        <link rel="import" href="/components/bower_components/google-map/google-map.html">
+        <title>About Me</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive img-rounded title-logo" src="images/my_picture.jpeg" alt="Logo">
+                    </div>
+                    
+                    <div class="col-md-6 text-right text-uppercase">
+                        <h1 class="title-super">Niko Caron</h1>
+                        <h4>Front-end Apprentice</h4>
+                    </div>
+                </div>
+            </header>
+            
+            <nav>
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="index.html">Home</a></li>
+                    <li role="presentation"><a href="#">All Projects</a></li>
+                    <li role="presentation" class="active"><a href="#">About me</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+            </nav>
+            
+            <section>
+                <p>My name is Niko, I'm from the very small town of Grand Falls, New Brunswick, Canada. Currenly, I am working in a sawmill but this is not that I plan to do forever. My true passion has always been computers and although I am new to writing code, I would love to work as a programmer. I'm currently enrolled in Udacity's Front-End Web Developer Nanodegree.</p>
+            </section>
+            
+            <google-map latitude="47.048079" longitude="-67.739903" fit-to-marker zoom="15">
+                <google-map-marker latitude="47.048079" longitude="-67.739903" draggable="false"></google-map-marker>
+            </google-map>
+            
+            <footer>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+                
+                <!-- TODO: add more links to other sites -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="zocial-github" href="https://github.com/ncaron" target="_blank"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="components/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    </body>
+</html>
