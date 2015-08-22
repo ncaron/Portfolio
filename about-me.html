@@ -12,22 +12,24 @@
         <link rel="import" href="components/bower_components/google-map/google-map.html">
         <title>About Me</title>
     </head>
-    
+
     <body>
         <div class="container">
             <header>
                 <div class="row">
+                    <!-- TODO: Change my picture to an icon -->
                     <div class="col-md-6">
                         <img class="img-responsive img-rounded title-logo" src="images/my_picture.jpeg" alt="Logo">
                     </div>
-                    
+
                     <div class="col-md-6 text-right text-uppercase">
                         <h1 class="title-super">Niko Caron</h1>
                         <h4>Front-end Apprentice</h4>
                     </div>
                 </div>
             </header>
-            
+
+            <!-- Navigation menu that turns into hamburger icon for mobile -->
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -38,7 +40,7 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    
+
                     <div class="collapse navbar-collapse" id="hamburger">
                         <ul class="nav navbar-nav">
                             <li><a href="index.html">Home</a></li>
@@ -49,21 +51,23 @@
                 </div>
             </nav>
 
+            <!-- TODO: Change this about me to be more professional -->
             <section>
                 <p>My name is Niko, I'm from the very small town of Grand Falls, New Brunswick, Canada. Currenly, I am working in a sawmill but this is not that I plan to do forever. My true passion has always been computers and although I am new to writing code, I would love to work as a programmer. I'm currently enrolled in Udacity's Front-End Web Developer Nanodegree.</p>
             </section>
-            
+
+            <!-- Polymer project to my make a Google Maps marker to my hometown -->
             <google-map latitude="47.048079" longitude="-67.739903" fit-to-marker zoom="15">
                 <google-map-marker latitude="47.048079" longitude="-67.739903" draggable="false"></google-map-marker>
             </google-map>
-            
+
             <footer>
                 <div class="row">
                     <div class="col-md-12">
                         <hr>
                     </div>
                 </div>
-                
+
                 <!-- TODO: add more links to other sites -->
                 <div class="row">
                     <div class="col-md-12">

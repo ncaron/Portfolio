@@ -10,22 +10,24 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300">
         <title>Portfolio</title>
     </head>
-    
+
     <body>
         <div class="container">
             <header>
                 <div class="row">
+                    <!-- TODO: Change my picture to an icon -->
                     <div class="col-md-6">
                         <img class="img-responsive img-rounded title-logo" src="images/my_picture.jpeg" alt="Logo">
                     </div>
-                
+
                     <div class="col-md-6 text-right text-uppercase">
                         <h1 class="title-super">Niko Caron</h1>
                         <h4>Front-end Apprentice</h4>
                     </div>
                 </div>
             </header>
-            
+
+            <!-- Navigation menu that turns into hamburger icon for mobile -->
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -36,7 +38,7 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    
+
                     <div class="collapse navbar-collapse" id="hamburger">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Home</a></li>
@@ -46,18 +48,19 @@
                     </div>
                 </div>
             </nav>
-            
+
+            <!-- A carousel to display projects not in featured projects, but can be found in All Projects page -->
             <section>
                 <div class="row">
                     <div class="col-md-12">
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <!-- carousel indicators -->
+                            <!-- carousel indicators, keep it at a max of 3 -->
                             <ol class="carousel-indicators">
                                 <li data-target="projec1" data-slide-to="0" class="active"></li>
                                 <li data-target="project2" data-slide-to="1"></li>
                                 <li data-target="Project3" data-slide-to="2"></li>
                             </ol>
-                        
+
                         <!-- carousel images -->
                             <!-- TODO: change the images for project images -->
                             <div class="carousel-inner" role="listbox">
@@ -92,7 +95,7 @@
                                     </a>
                                 </div>
                             </div>
-                        
+
                         <!-- carousel controls -->
                             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -106,14 +109,15 @@
                     </div>
                 </div>
             </section>
-            
+
+            <!-- Featured work from Ucadity's nanodegree -->
             <section>
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Featured Work</h2>
                     </div>
                 </div>
-            
+
                 <div class="row text-center">
                     <div class="col-md-4" data-toggle="modal" data-target="#project1">
                         <picture>
@@ -125,7 +129,7 @@
                         <h3>Project 1</h3>
                         <p>Design Mockup</p>
                     </div>
-                
+
                     <!-- TODO: change the image to project 2 -->
                     <div class="col-md-4" data-toggle="modal" data-target="#project2">
                         <picture>
@@ -137,7 +141,7 @@
                         <h3>Project 2</h3>
                         <p>Coming Soon</p>
                     </div>
-                
+
                     <!-- TODO: change the image to project 3 -->
                     <div class="col-md-4" data-toggle="modal" data-target="#project3">
                         <picture>
@@ -150,7 +154,7 @@
                         <p>Coming Soon</p>
                     </div>
                 </div>
-            
+
                 <div class="row text-center margin-top">
                     <!-- TODO: change the image to project 4 -->
                     <div class="col-md-4" data-toggle="modal" data-target="#project4">
@@ -163,7 +167,7 @@
                         <h3>Project 4</h3>
                         <p>Coming Soon</p>
                     </div>
-                
+
                     <!-- TODO: change the image to project 5 -->
                     <div class="col-md-4" data-toggle="modal" data-target="#project5">
                         <picture>
@@ -175,7 +179,7 @@
                         <h3>Project 5</h3>
                         <p>Coming Soon</p>
                     </div>
-                
+
                     <!-- TODO: change the image to project 6 -->
                     <div class="col-md-4" data-toggle="modal" data-target="#project6">
                         <picture>
@@ -189,15 +193,15 @@
                     </div>
                 </div>
             </section>
-            
-            
+
+
             <footer>
                 <div class="row">
                     <div class="col-md-12">
                         <hr>
                     </div>
                 </div>
-            
+
                 <!-- TODO: add more links to other sites -->
                 <div class="row">
                     <div class="col-md-12">
@@ -206,7 +210,7 @@
                 </div>
             </footer>
         </div>
-        
+
         <!-- Project 1 Modal -->
         <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1-title" aria-hidden="true">
             <div class="modal-dialog">
@@ -214,7 +218,7 @@
                     <div class="modal-header">
                         <h4 class="modal-title" id="project1-title">Project 1 - Replicate Mockup</h4>
                     </div>
-                    
+
                     <div class="modal-body">
                         <picture>
                             <source
@@ -228,20 +232,20 @@
                                 <a href="http://assignments.udacity-extras.appspot.com/courses/html-css/img/mock3-portfolio-1.pdf" target="_blank">View Udacity's design</a>
                             </div>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-md-12">
                                 <a href="https://github.com/ncaron/project1" target="_blank">Link to this project on GitHub</a>
                             </div>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-md-12">
                                 <a href="http://codepen.io/ncaron/pen/zGQzQR" target="_blank">Link to this project on CodePen</a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         <a class="btn btn-default" role="button" href="project-1.html" target="_blank">Open</a>
@@ -249,7 +253,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Project 2 Modal -->
         <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2-title" aria-hidden="true">
             <div class="modal-dialog">
@@ -258,7 +262,7 @@
                         <!-- TODO: remove (Coming Soon) -->
                         <h4 class="modal-title" id="project2-title">Project 2 (Coming Soon)</h4>
                     </div>
-                    
+
                     <div class="modal-body">
                         <!-- TODO: change the image and description to that of the project -->
                         <picture>
@@ -270,7 +274,7 @@
                         <p>In the early mornings, fog in my hometown of Grand Falls is very thick.</p>
                         <!-- TODO: add GitHub and/or CopePen links -->
                     </div>
-                    
+
                     <!-- TODO: add a button to go to the project directly -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -278,7 +282,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Project 3 Modal -->
         <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3-title" aria-hidden="true">
             <div class="modal-dialog">
@@ -287,7 +291,7 @@
                         <!-- TODO: remove (Coming Soon) -->
                         <h4 class="modal-title" id="project3-title">Project 3 (Coming Soon)</h4>
                     </div>
-                    
+
                     <div class="modal-body">
                         <!-- TODO: change the image and description to that of the project -->
                         <picture>
@@ -299,7 +303,7 @@
                         <p>This is my dog, Milo. He is a pomeranian and 6 years old.</p>
                         <!-- TODO: add GitHub and/or CopePen links -->
                     </div>
-                    
+
                     <!-- TODO: add a button to go to the project directly -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -307,7 +311,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Project 4 Modal -->
         <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="project4-title" aria-hidden="true">
             <div class="modal-dialog">
@@ -316,7 +320,7 @@
                         <!-- TODO: remove (Coming Soon) -->
                         <h4 class="modal-title" id="project4-title">Project 4 (Coming Soon)</h4>
                     </div>
-                    
+
                     <div class="modal-body">
                         <!-- TODO: change the image and description to that of the project -->
                         <picture>
@@ -328,7 +332,7 @@
                         <p>Dark clounds over my home just before a storm.</p>
                         <!-- TODO: add GitHub and/or CopePen links -->
                     </div>
-                    
+
                     <!-- TODO: add a button to go to the project directly -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -336,7 +340,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Project 5 Modal -->
         <div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="project5-title" aria-hidden="true">
             <div class="modal-dialog">
@@ -345,7 +349,7 @@
                         <!-- TODO: remove (Coming Soon) -->
                         <h4 class="modal-title" id="project5-title">Project 5 (Coming Soon)</h4>
                     </div>
-                    
+
                     <div class="modal-body">
                         <!-- TODO: change the image and description to that of the project -->
                         <picture>
@@ -357,7 +361,7 @@
                         <p>One of our apple trees behind the house. It's still small but fully loaded! If you look closely, you'll see a fallen tree in the background, a result of the storm from the previous picture. I'm surprised the apples are still hanging!</p>
                         <!-- TODO: add GitHub and/or CopePen links -->
                     </div>
-                    
+
                     <!-- TODO: add a button to go to the project directly -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -365,7 +369,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Project 6 Modal -->
         <div class="modal fade" id="project6" tabindex="-1" role="dialog" aria-labelledby="project6-title" aria-hidden="true">
             <div class="modal-dialog">
@@ -374,7 +378,7 @@
                         <!-- TODO: remove (Coming Soon) -->
                         <h4 class="modal-title" id="project6-title">Project 6 (Coming Soon)</h4>
                     </div>
-                    
+
                     <div class="modal-body">
                         <!-- TODO: change the image and description to that of the project -->
                         <picture>
@@ -386,7 +390,7 @@
                         <p>This is my cat, Ginger. She loves to but outside and always follows me around.</p>
                         <!-- TODO: add GitHub and/or CopePen links -->
                     </div>
-                    
+
                     <!-- TODO: add a button to go to the project directly -->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -394,7 +398,7 @@
                 </div>
             </div>
         </div>
-        
+
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
