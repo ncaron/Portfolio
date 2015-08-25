@@ -54,13 +54,15 @@
             <!-- TODO: Change this about me to be more professional -->
             <section>
                 <p>My name is Niko, I'm from the very small town of Grand Falls, New Brunswick, Canada. Currenly, I am working in a sawmill but this is not that I plan to do forever. My true passion has always been computers and although I am new to writing code, I would love to work as a programmer. I'm currently enrolled in Udacity's Front-End Web Developer Nanodegree.</p>
-            </section>
-
-            <!-- Polymer project to my make a Google Maps marker to my hometown -->
-            <google-map latitude="47.048079" longitude="-67.739903" fit-to-marker zoom="15">
-                <google-map-marker latitude="47.048079" longitude="-67.739903" draggable="false"></google-map-marker>
-            </google-map>
-
+            </section>           
+            
+            <article>
+                <div class="row">
+                    <div id="map" class="col-md-12">
+                    </div>
+                </div>
+            </article>
+            
             <footer>
                 <div class="row">
                     <div class="col-md-12">
@@ -79,5 +81,7 @@
         <script src="components/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/google_maps.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGga35qh6Po1B7hMNxRFML3CNgOiZLypM&callback=initMap"></script>
     </body>
 </html>

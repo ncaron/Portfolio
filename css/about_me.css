@@ -1,5 +1,4 @@
 /* Style the Google Map */
-google-map {
+#map {
     height: 300px;
-    max-width: 100%;
 }
