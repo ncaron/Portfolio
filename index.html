@@ -11,205 +11,199 @@
         <title>Portfolio</title>
     </head>
 
-    <body>
-        <div class="container">
-            <header>
-                <div class="row">
-                    <!-- TODO: Change my picture to an icon -->
-                    <div class="col-md-6">
-                        <img class="img-responsive img-rounded title-logo" src="images/my_picture.jpeg" alt="Logo">
-                    </div>
+    <body class="container">
+        <header class="row">
+            <!-- TODO: Change my picture to an icon -->
+            <div class="col-md-6">
+                <img class="img-responsive img-rounded title-logo" src="images/my_picture.jpeg" alt="Logo">
+            </div>
 
-                    <div class="col-md-6 text-right text-uppercase">
-                        <h1 class="title-super">Niko Caron</h1>
-                        <h4>Front-end Apprentice</h4>
-                    </div>
-                </div>
-            </header>
+            <div class="col-md-6 text-right text-uppercase">
+                <h1 class="title-super">Niko Caron</h1>
+                <h4>Front-end Apprentice</h4>
+            </div>
+        </header>
 
             <!-- Navigation menu that turns into hamburger icon for mobile -->
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="hamburger">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="all_projects.html">All Projects</a></li>
-                            <li><a href="about-me.html">About Me</a></li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-            </nav>
+
+                <div class="collapse navbar-collapse" id="hamburger">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="all_projects.html">All Projects</a></li>
+                        <li><a href="about-me.html">About Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
             <!-- A carousel to display projects not in featured projects, but can be found in All Projects page -->
-            <section>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <!-- carousel indicators, keep it at a max of 3 -->
-                            <ol class="carousel-indicators">
-                                <li data-target="projec1" data-slide-to="0" class="active"></li>
-                                <li data-target="project2" data-slide-to="1"></li>
-                                <li data-target="Project3" data-slide-to="2"></li>
-                            </ol>
+        <section class="row">
+            <div class="col-md-12">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- carousel indicators, keep it at a max of 3 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="projec1" data-slide-to="0" class="active"></li>
+                        <li data-target="project2" data-slide-to="1"></li>
+                        <li data-target="Project3" data-slide-to="2"></li>
+                    </ol>
 
-                        <!-- carousel images -->
-                            <!-- TODO: change the images for project images -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <a href="images/snow.jpg" target="_blank">
-                                        <picture>
-                                            <source
-                                                media="(min-width: 767px)"
-                                                srcset="images/snow.jpg">
-                                            <img class="img-responsive" src="images/mobile/snow-min.jpg" alt="Projet Name">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="images/ginger1.jpg" target="_blank">
-                                        <picture>
-                                            <source
-                                                media="(min-width: 767px)"
-                                                srcset="images/ginger1.jpg">
-                                            <img class="img-responsive" src="images/mobile/ginger1-min.jpg" alt="Projet Name">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="images/milo1.jpg" target="_blank">
-                                        <picture>
-                                            <source
-                                                media="(min-width: 767px)"
-                                                srcset="images/milo1.jpg">
-                                            <img class="img-responsive" src="images/mobile/milo1-min.jpg" alt="Projet Name">
-                                        </picture>
-                                    </a>
-                                </div>
-                            </div>
-
-                        <!-- carousel controls -->
-                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
+                    <!-- carousel images -->
+                    <!-- TODO: change the images for project images -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="images/snow.jpg" target="_blank">
+                                <picture>
+                                    <source
+                                        media="(min-width: 767px)"
+                                        srcset="images/snow.jpg">
+                                    <img class="img-responsive" src="images/mobile/snow-min.jpg" alt="Projet Name">
+                                </picture>
                             </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
+                        </div>
+                        <div class="item">
+                            <a href="images/ginger1.jpg" target="_blank">
+                                <picture>
+                                    <source
+                                        media="(min-width: 767px)"
+                                        srcset="images/ginger1.jpg">
+                                    <img class="img-responsive" src="images/mobile/ginger1-min.jpg" alt="Projet Name">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="images/milo1.jpg" target="_blank">
+                                <picture>
+                                    <source
+                                        media="(min-width: 767px)"
+                                        srcset="images/milo1.jpg">
+                                    <img class="img-responsive" src="images/mobile/milo1-min.jpg" alt="Projet Name">
+                                </picture>
                             </a>
                         </div>
                     </div>
+
+                    <!-- carousel controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Featured work from Ucadity's nanodegree -->
-            <section>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Featured Work</h2>
-                    </div>
+        <!-- Featured work from Ucadity's nanodegree -->
+        <section>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Featured Work</h2>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-4" data-toggle="modal" data-target="#project1">
+                    <picture>
+                        <source
+                                media="(min-width: 767px)"
+                                srcset="images/project1.jpg">
+                        <img class="img-responsive" src="images/mobile/project1-min.jpg" alt="Projet 1">
+                    </picture>
+                    <h3>Project 1</h3>
+                    <p>Design Mockup</p>
                 </div>
 
-                <div class="row text-center">
-                    <div class="col-md-4" data-toggle="modal" data-target="#project1">
-                        <picture>
-                            <source
-                                    media="(min-width: 767px)"
-                                    srcset="images/project1.jpg">
-                            <img class="img-responsive" src="images/mobile/project1-min.jpg" alt="Projet 1">
-                        </picture>
-                        <h3>Project 1</h3>
-                        <p>Design Mockup</p>
-                    </div>
+                <!-- TODO: change the image to project 2 -->
+                <div class="col-md-4" data-toggle="modal" data-target="#project2">
+                    <picture>
+                        <source
+                                media="(min-width: 767px)"
+                                srcset="images/fog.jpg">
+                        <img class="img-responsive" src="images/mobile/fog-min.jpg" alt="Project 2">
+                    </picture>
+                    <h3>Project 2</h3>
+                    <p>Coming Soon</p>
+                </div>
 
-                    <!-- TODO: change the image to project 2 -->
-                    <div class="col-md-4" data-toggle="modal" data-target="#project2">
-                        <picture>
-                            <source
-                                    media="(min-width: 767px)"
-                                    srcset="images/fog.jpg">
-                            <img class="img-responsive" src="images/mobile/fog-min.jpg" alt="Project 2">
-                        </picture>
-                        <h3>Project 2</h3>
-                        <p>Coming Soon</p>
-                    </div>
-
-                    <!-- TODO: change the image to project 3 -->
-                    <div class="col-md-4" data-toggle="modal" data-target="#project3">
-                        <picture>
-                            <source
-                                    media="(min-width: 767px)"
-                                    srcset="images/milo.jpg">
-                            <img class="img-responsive" src="images/mobile/milo-min.jpg" alt="Project3">
-                        </picture>
+                <!-- TODO: change the image to project 3 -->
+                <div class="col-md-4" data-toggle="modal" data-target="#project3">
+                    <picture>
+                        <source
+                                media="(min-width: 767px)"
+                                srcset="images/milo.jpg">
+                        <img class="img-responsive" src="images/mobile/milo-min.jpg" alt="Project3">
+                    </picture>
                         <h3>Project 3</h3>
                         <p>Coming Soon</p>
-                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center margin-top">
+                <!-- TODO: change the image to project 4 -->
+                <div class="col-md-4" data-toggle="modal" data-target="#project4">
+                    <picture>
+                        <source
+                                media="(min-width: 767px)"
+                                srcset="images/sky.jpg">
+                        <img class="img-responsive" src="images/mobile/sky-min.jpg" alt="Project 4">
+                    </picture>
+                    <h3>Project 4</h3>
+                    <p>Coming Soon</p>
                 </div>
 
-                <div class="row text-center margin-top">
-                    <!-- TODO: change the image to project 4 -->
-                    <div class="col-md-4" data-toggle="modal" data-target="#project4">
-                        <picture>
-                            <source
-                                    media="(min-width: 767px)"
-                                    srcset="images/sky.jpg">
-                            <img class="img-responsive" src="images/mobile/sky-min.jpg" alt="Project 4">
-                        </picture>
-                        <h3>Project 4</h3>
-                        <p>Coming Soon</p>
-                    </div>
-
-                    <!-- TODO: change the image to project 5 -->
-                    <div class="col-md-4" data-toggle="modal" data-target="#project5">
-                        <picture>
-                            <source
-                                    media="(min-width: 767px)"
-                                    srcset="images/apple_tree.jpg">
-                            <img class="img-responsive" src="images/mobile/apple_tree-min.jpg" alt="Project 5">
-                        </picture>
-                        <h3>Project 5</h3>
-                        <p>Coming Soon</p>
-                    </div>
-
-                    <!-- TODO: change the image to project 6 -->
-                    <div class="col-md-4" data-toggle="modal" data-target="#project6">
-                        <picture>
-                            <source
-                                    media="(min-width: 767px)"
-                                    srcset="images/ginger.jpg">
-                            <img class="img-responsive" src="images/mobile/ginger-min.jpg" alt="Project 6">
-                        </picture>
-                        <h3>Project 6</h3>
-                        <p>Coming Soon</p>
-                    </div>
-                </div>
-            </section>
-
-
-            <footer>
-                <div class="row">
-                    <div class="col-md-12">
-                        <hr>
-                    </div>
+                <!-- TODO: change the image to project 5 -->
+                <div class="col-md-4" data-toggle="modal" data-target="#project5">
+                    <picture>
+                        <source
+                                media="(min-width: 767px)"
+                                srcset="images/apple_tree.jpg">
+                        <img class="img-responsive" src="images/mobile/apple_tree-min.jpg" alt="Project 5">
+                    </picture>
+                    <h3>Project 5</h3>
+                    <p>Coming Soon</p>
                 </div>
 
-                <!-- TODO: add more links to other sites -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <a class="zocial-github" href="https://github.com/ncaron" target="_blank"></a>
-                    </div>
+                <!-- TODO: change the image to project 6 -->
+                <div class="col-md-4" data-toggle="modal" data-target="#project6">
+                    <picture>
+                        <source
+                                media="(min-width: 767px)"
+                                srcset="images/ginger.jpg">
+                        <img class="img-responsive" src="images/mobile/ginger-min.jpg" alt="Project 6">
+                    </picture>
+                    <h3>Project 6</h3>
+                    <p>Coming Soon</p>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+
+            <!-- TODO: add more links to other sites -->
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="zocial-github" href="https://github.com/ncaron" target="_blank"></a>
+                </div>
+            </div>
+        </footer>
 
         <!-- Project 1 Modal -->
         <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1-title" aria-hidden="true">

@@ -13,71 +13,64 @@
         <title>About Me</title>
     </head>
 
-    <body>
-        <div class="container">
-            <header>
-                <div class="row">
-                    <!-- TODO: Change my picture to an icon -->
-                    <div class="col-md-6">
-                        <img class="img-responsive img-rounded title-logo" src="images/my_picture.jpeg" alt="Logo">
-                    </div>
+    <body class="container">
+        <header class="row">
+            <!-- TODO: Change my picture to an icon -->
+            <div class="col-md-6">
+                <img class="img-responsive img-rounded title-logo" src="images/my_picture.jpeg" alt="Logo">
+            </div>
 
-                    <div class="col-md-6 text-right text-uppercase">
-                        <h1 class="title-super">Niko Caron</h1>
-                        <h4>Front-end Apprentice</h4>
-                    </div>
+            <div class="col-md-6 text-right text-uppercase">
+                <h1 class="title-super">Niko Caron</h1>
+                <h4>Front-end Apprentice</h4>
+            </div>
+        </header>
+
+        <!-- Navigation menu that turns into hamburger icon for mobile -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-            </header>
 
-            <!-- Navigation menu that turns into hamburger icon for mobile -->
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="hamburger">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="all_projects.html">All Projects</a></li>
-                            <li class="active"><a href="#">About Me</a></li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse" id="hamburger">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="all_projects.html">All Projects</a></li>
+                        <li class="active"><a href="#">About Me</a></li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-            <!-- TODO: Change this about me to be more professional -->
-            <section>
+        <!-- TODO: Change this about me to be more professional -->
+        <section class="row">
+            <div class="col-md-3">
                 <p>My name is Niko, I'm from the very small town of Grand Falls, New Brunswick, Canada. Currenly, I am working in a sawmill but this is not that I plan to do forever. My true passion has always been computers and although I am new to writing code, I would love to work as a programmer. I'm currently enrolled in Udacity's Front-End Web Developer Nanodegree.</p>
-            </section>           
-            
-            <article>
-                <div class="row">
-                    <div id="map" class="col-md-12">
-                    </div>
-                </div>
-            </article>
-            
-            <footer>
-                <div class="row">
-                    <div class="col-md-12">
-                        <hr>
-                    </div>
-                </div>
+            </div>
+            <div id="map" class="col-md-19"></div>
+        </section>
 
-                <!-- TODO: add more links to other sites -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <a class="zocial-github" href="https://github.com/ncaron" target="_blank"></a>
-                    </div>
+        <footer>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
                 </div>
-            </footer>
-        </div>
+            </div>
+
+            <!-- TODO: add more links to other sites -->
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="zocial-github" href="https://github.com/ncaron" target="_blank"></a>
+                </div>
+            </div>
+        </footer>
+
         <script src="components/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
