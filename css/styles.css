@@ -20,16 +20,18 @@ body {
 
 /* makes sure everything looks nice with difference screen sizes */
 @media screen and (max-width: 991px) {
-    .title-super, h4 {
+    .title-super, 
+    h4 {
         display: flex;
         text-align: left;
     }
 }
 
-/* Navbar */
-.navbar-default .navbar-nav > li > a:hover {
+/* changes the color of the navbar links when the mouse hovers */
+#hover-color .link-hover-color:hover {
     color: #e64a19;
 }
+
 
 /* Content */
 h2 {
@@ -82,4 +84,15 @@ hr {
     font-size: 40px;
     text-shadow: 2px 2px 2px;
     margin-left: 15px;
+}
+
+.zocial-github:hover {
+    color: #e64a19;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px;
+    margin-left: 15px;
+}
+
+a:hover {
+    text-decoration: none;
 }
