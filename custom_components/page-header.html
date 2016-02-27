@@ -1,10 +1,10 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
-<link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 
 <dom-module id="page-header">
 	<style>
 		header {
+			@apply(--layout-vertical);
 			margin: 0px 20px;
 		}
 
@@ -17,12 +17,9 @@
 		}
 
 		.name-title {
+			@apply(--layout-flex);
 			text-transform: uppercase;
 			color: #e64a19;
-			text-align: right;
-		}
-
-		.mobile {
 			text-align: left;
 		}
 
@@ -37,38 +34,30 @@
 			font-weight: 300;
 			margin: 0px
 		}
+
+		/* CSS for desktop */
+		@media screen and (min-width: 551px) {
+			header {
+				@apply(--layout-horizontal);
+			}
+
+			.name-title {
+				text-align: right;
+			}
+		}
 	</style>
 
 	<template>
-		<iron-media-query query="(max-width: 550px)" query-matches="{{mobile}}"></iron-media-query>
+		<header>
+			<div>
+				<img class="header-logo" src="../images/my_picture.jpeg" alt="">
+			</div>
 
-		<!-- Template for desktop -->
-		<template is="dom-if" if="{{!mobile}}">
-			<header class="layout horizontal">
-				<div>
-					<img class="header-logo" src="../images/my_picture.jpeg" alt="">
-				</div>
-
-				<section class="flex name-title">
-					<h1 class="name">Niko Caron</h1>
-					<h4 class="title">Front End Web Developer</h4>
-				</section>
-			</header>
-		</template>
-
-		<!-- Template for mobile -->
-		<template is="dom-if" if="{{mobile}}">
-			<header>
-				<div>
-					<img class="header-logo" src="../images/my_picture.jpeg" alt="">
-				</div>
-	
-				<section class="name-title mobile">
-					<h1 class="name">Niko Caron</h1>
-					<h4 class="title">Front End Web Developer</h4>
-				</section>
-			</header>
-		</template>
+			<section class="name-title">
+				<h1 class="name">Niko Caron</h1>
+				<h2 class="title">Front End Web Developer</h2>
+			</section>
+		</header>
 	</template>
 </dom-module>
 

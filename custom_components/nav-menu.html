@@ -1,0 +1,58 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/iron-selector/iron-selector.html">
+
+<link rel="import" href="project-list.html">
+<link rel="import" href="my-resume.html">
+<link rel="import" href="about-me.html">
+
+<dom-module id="nav-menu">
+	<style>
+		paper-tabs {
+			background: #FF5722; /* For browsers that do not support gradients */
+			background: -webkit-linear-gradient(#FF5722, #ffffff); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(#FF5722, #ffffff); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(#FF5722, #ffffff); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(#FF5722, #ffffff); /* Standard syntax */
+
+			--paper-tabs-selection-bar-color: #8D6E63;
+			font-family: 'Lato', sans-serif;
+			font-weight: 300;
+			font-size: 15px;
+			margin-top: 20px;
+		}
+
+		paper-tab {
+			--paper-tab-ink: #8D6E63;
+		}
+
+		.bold {
+			font-weight: 700;
+		}
+	</style>
+
+	<template>
+		<paper-tabs selected="{{selected}}" selected-class="bold">
+ 			<paper-tab>Home</paper-tab>
+ 			<paper-tab>Resume</paper-tab>
+ 			<paper-tab>About Me</paper-tab>
+		</paper-tabs>
+	
+		<iron-pages selected="{{selected}}">
+			<project-list></project-list>
+			<my-resume></my-resume>
+			<about-me></about-me>
+		</iron-pages>
+	</template>
+</dom-module>
+
+<script>
+	Polymer({
+		is: 'nav-menu',
+		ready: function() {
+			var initialTab = document.querySelector('iron-pages');
+			initialTab.setAttribute('selected', '0');
+		}
+	});
+</script>

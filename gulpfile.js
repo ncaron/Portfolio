@@ -9,6 +9,7 @@ gulp.task('browser-sync', function() {
 	});
 
 	gulp.watch('index.html').on('change', browserSync.reload);
+	gulp.watch('custom_components/*.html').on('change', browserSync.reload);
 	gulp.watch('css/*.css').on('change', browserSync.reload);
 	gulp.watch('js/*.css').on('change', browserSync.reload);
 });
