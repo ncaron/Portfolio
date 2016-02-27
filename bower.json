@@ -1,0 +1,25 @@
+{
+  "name": "Portfolio",
+  "description": "Niko Caron's front end web developer portfolio.",
+  "main": "index.html",
+  "authors": [
+    "Niko <niko.caron90@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Front",
+    "End",
+    "Web",
+    "Developer",
+    "Portfolio"
+  ],
+  "homepage": "https://github.com/ncaron/Portfolio",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
