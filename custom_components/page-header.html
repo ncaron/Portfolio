@@ -1,0 +1,79 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
+
+<dom-module id="page-header">
+	<style>
+		header {
+			margin: 0px 20px;
+		}
+
+		.header-logo {
+			margin-top: 20px;
+			max-height: 100px;
+			max-width: 100px;
+			border: 1px solid black;
+			border-radius: 7%;
+		}
+
+		.name-title {
+			text-transform: uppercase;
+			color: #e64a19;
+			text-align: right;
+		}
+
+		.mobile {
+			text-align: left;
+		}
+
+		.name {
+			font-size: 60px;
+			font-weight: 100;
+			margin: 10px 0px;
+		}
+
+		.title {
+			font-size: 20px;
+			font-weight: 300;
+			margin: 0px
+		}
+	</style>
+
+	<template>
+		<iron-media-query query="(max-width: 550px)" query-matches="{{mobile}}"></iron-media-query>
+
+		<!-- Template for desktop -->
+		<template is="dom-if" if="{{!mobile}}">
+			<header class="layout horizontal">
+				<div>
+					<img class="header-logo" src="../images/my_picture.jpeg" alt="">
+				</div>
+
+				<section class="flex name-title">
+					<h1 class="name">Niko Caron</h1>
+					<h4 class="title">Front End Web Developer</h4>
+				</section>
+			</header>
+		</template>
+
+		<!-- Template for mobile -->
+		<template is="dom-if" if="{{mobile}}">
+			<header>
+				<div>
+					<img class="header-logo" src="../images/my_picture.jpeg" alt="">
+				</div>
+	
+				<section class="name-title mobile">
+					<h1 class="name">Niko Caron</h1>
+					<h4 class="title">Front End Web Developer</h4>
+				</section>
+			</header>
+		</template>
+	</template>
+</dom-module>
+
+<script>
+	Polymer({
+		is: 'page-header'
+	});
+</script>
