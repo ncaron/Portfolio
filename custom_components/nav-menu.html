@@ -4,7 +4,6 @@
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html">
 
 <link rel="import" href="project-list.html">
-<link rel="import" href="my-resume.html">
 <link rel="import" href="about-me.html">
 
 <dom-module id="nav-menu">
@@ -35,13 +34,11 @@
 	<template>
 		<paper-tabs selected="{{selected}}" selected-class="bold">
  			<paper-tab>Home</paper-tab>
- 			<paper-tab>Resume</paper-tab>
  			<paper-tab>About Me</paper-tab>
 		</paper-tabs>
 	
 		<iron-pages selected="{{selected}}">
 			<project-list></project-list>
-			<my-resume></my-resume>
 			<about-me></about-me>
 		</iron-pages>
 	</template>
