@@ -1,0 +1,148 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<link rel="import" href="skill-listing.html">
+<link rel="import" href="project-listing.html">
+
+<dom-module id="my-portfolio">
+	<style>
+		p {
+			margin: 20px;
+		}
+
+		h3 {
+			color: #e64a19;
+			font-style: italic;
+			margin: 20px;
+		}
+
+		#skills {
+			@apply(--layout-horizontal);
+			@apply(--layout-wrap);
+			margin: 20px;
+		}
+
+		skill-listing {
+			@apply(--layout-flex);
+			margin: 0 30px;
+		}
+		
+		skill-listing:hover {
+			-webkit-animation-name: blink;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-iteration-count: infinite;
+		}
+
+		@-webkit-keyframes blink {
+			0% {opacity: 1; color: #8D6E63;}
+			50% {opacity: 0; color: #e64a19;}
+			100% {opacity: 1; color: #8D6E63;}
+		}
+		
+		h1 {
+			color: #e64a19;
+			font-style: italic;
+		}
+
+		#projects {
+			text-align: center;
+		}
+
+		a {
+			color: #e64a19;
+		}
+
+		a:hover {
+			font-weight: bold;
+		}
+	</style>
+
+	<template>
+		<p>This was part of
+			<a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank">
+				Udacity's Front-End Web Developer Nanodegree
+			</a>
+		where I used my new HTML, CSS and responsive web design skills to build a portfolio to show
+		the other projects I would build during this nanodgree. Now that the nanodegree is complete,
+		looking back at my code and it's really messy and there's things to do to improve it with
+		the new skills I've learned. To demonstrate that I'm not afraid of learning new frameworks
+		and change my way of thinking, I started to learn
+			<a href="https://www.polymer-project.org/1.0/" target="_blank">
+				Polymer Components
+			</a>
+		and rebuilt this portfolio using it. My code for this portfolio can be found
+			<a href="https://github.com/ncaron/Portfolio" target="_blank">
+				here
+			</a>
+		and the code for the old version can be found
+			<a href="https://github.com/ncaron/Portfolio/tree/f372204fda3d0bbe029ed5a09254d023ada52a39" target="_blank">
+				Here
+			</a>
+		</p>
+
+		<h3>Skills at a glance:</h3>
+
+		<section id="skills">
+			<template is="dom-repeat" items="{{skills}}">
+				<skill-listing
+					skill="{{item}}">
+				</skill-listing>
+			</template>
+		</section>
+
+		<section id="projects">
+			<h1>Projects</h1>
+			<template is="dom-repeat" items="{{projects}}">
+				<project-listing
+					id="{{item.id}}"
+					title="{{item.title}}"
+					date="{{item.date}}"
+					description="{{item.description}}"
+					url="{{item.url}}"
+					image="{{item.image}}">
+				</project-listing>
+			</template>
+		</section>
+	</template>
+</dom-module>
+
+<script>
+	Polymer({
+		is: 'my-portfolio',
+		ready: function() {
+			this.skills = [
+				'HTML',
+				'CSS',
+				'JavaScript',
+				'jQuery',
+				'Bootstrap',
+				'AJAX',
+				'Jasmine',
+				'Knockout.js',
+				'Polymer Components',
+				'Build Tools'
+			]
+
+			this.projects = [
+				{
+					title: 'Capital Coffee',
+					date: 2016,
+					description: 'A single page application using the Knockout.js framework along with Bootstrap, jQuery, ' +
+								 'Google Maps API, REST Countries API and Foursquare API to populate a list of coffee shops ' +
+								 'in a world capital of the user\'s choice. This application uses local storage to store a list of favorite shops.',
+					url: 'http://ncaron.github.io/Capital-Coffee/',
+					image: '../images/capital_coffee.jpg'
+				},
+				{
+					title: 'Arcade Game Clone',
+					date: 2015,
+					description: 'Using Udacity\'s provided visual assets and game loop engine, add a number of entities to the ' +
+								 'game including the player character and enemies to recreate the arcade game Frogger. (Curently, ' +
+								 'going to this project\'s page will bring you to my old portfolio website).',
+					url: 'http://ncaron.github.io/frontend-nanodegree-arcade-game/',
+					image: '../images/arcade_game.jpg'
+				}
+			]
+		}
+	});
+</script>

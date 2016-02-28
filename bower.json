@@ -1,0 +1,36 @@
+{
+  "name": "Portfolio",
+  "description": "Niko Caron's front end web developer portfolio.",
+  "main": "index.html",
+  "authors": [
+    "Niko <niko.caron90@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Front",
+    "End",
+    "Web",
+    "Developer",
+    "Portfolio"
+  ],
+  "homepage": "https://github.com/ncaron/Portfolio",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.2.0",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.3.0",
+    "iron-media-query": "PolymerElements/iron-media-query#^1.0.8",
+    "paper-tabs": "PolymerElements/paper-tabs#^1.3.7",
+    "iron-pages": "PolymerElements/iron-pages#^1.0.7",
+    "google-map": "GoogleWebComponents/google-map#^1.1.10"
+  },
+  "resolutions": {
+    "polymer": "1.3.0"
+  }
+}

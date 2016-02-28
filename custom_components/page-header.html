@@ -1,0 +1,69 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<dom-module id="page-header">
+	<style>
+		header {
+			@apply(--layout-vertical);
+			margin: 0px 20px;
+		}
+
+		.header-logo {
+			margin-top: 20px;
+			max-height: 100px;
+			max-width: 100px;
+			border: 1px solid black;
+			border-radius: 7%;
+		}
+
+		.name-title {
+			@apply(--layout-flex);
+			text-transform: uppercase;
+			color: #e64a19;
+			text-align: left;
+			line-height: 1;
+		}
+
+		.name {
+			font-size: 60px;
+			font-weight: 100;
+			margin: 10px 0px;
+		}
+
+		.title {
+			font-size: 20px;
+			font-weight: 300;
+			margin: 0px
+		}
+
+		/* CSS for desktop */
+		@media screen and (min-width: 551px) {
+			header {
+				@apply(--layout-horizontal);
+			}
+
+			.name-title {
+				text-align: right;
+			}
+		}
+	</style>
+
+	<template>
+		<header>
+			<div>
+				<img class="header-logo" src="../images/my_picture.jpeg" alt="">
+			</div>
+
+			<section class="name-title">
+				<h1 class="name">Niko Caron</h1>
+				<h2 class="title">Front End Web Developer</h2>
+			</section>
+		</header>
+	</template>
+</dom-module>
+
+<script>
+	Polymer({
+		is: 'page-header'
+	});
+</script>
