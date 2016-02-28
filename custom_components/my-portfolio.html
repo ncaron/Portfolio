@@ -1,10 +1,42 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<link rel="import" href="skill-listing.html">
 
 <dom-module id="my-portfolio">
 	<style>
 		p {
 			margin: 20px;
 			line-height: 1.75;
+		}
+
+		h3 {
+			color: #e64a19;
+			font-style: italic;
+			margin: 20px;
+		}
+
+		#skills {
+			@apply(--layout-horizontal);
+			@apply(--layout-wrap);
+			margin: 20px;
+		}
+
+		skill-listing {
+			@apply(--layout-flex);
+			margin: 0 30px;
+		}
+		
+		skill-listing:hover {
+			-webkit-animation-name: blink;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-iteration-count: infinite;
+		}
+
+		@-webkit-keyframes blink {
+			0% {opacity: 1; color: #8D6E63;}
+			50% {opacity: 0; color: #e64a19;}
+			100% {opacity: 1; color: #8D6E63;}
 		}
 	</style>
 
@@ -21,7 +53,7 @@
 			<a href="https://www.polymer-project.org/1.0/" target="_blank">
 				Polymer Components
 			</a>
-		and rebuilts this portfolio using it. My code for this portfolio can be found
+		and rebuilt this portfolio using it. My code for this portfolio can be found
 			<a href="https://github.com/ncaron/Portfolio" target="_blank">
 				here
 			</a>
@@ -30,11 +62,35 @@
 				Here
 			</a>
 		</p>
+
+		<h3>Skills at a glance:</h3>
+
+		<section id="skills">
+			<template is="dom-repeat" items="{{skills}}">
+				<skill-listing
+					skill="{{item}}">
+				</skill-listing>
+			</template>
+		</section>
 	</template>
 </dom-module>
 
 <script>
 	Polymer({
-		is: 'my-portfolio'
+		is: 'my-portfolio',
+		ready: function() {
+			this.skills = [
+				'HTML',
+				'CSS',
+				'JavaScript',
+				'jQuery',
+				'Bootstrap',
+				'AJAX',
+				'Jasmine',
+				'Knockout.js',
+				'Polymer Components',
+				'Build Tools'
+			]
+		}
 	});
 </script>
