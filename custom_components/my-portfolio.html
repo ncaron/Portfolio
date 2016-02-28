@@ -2,12 +2,12 @@
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 
 <link rel="import" href="skill-listing.html">
+<link rel="import" href="project-listing.html">
 
 <dom-module id="my-portfolio">
 	<style>
 		p {
 			margin: 20px;
-			line-height: 1.75;
 		}
 
 		h3 {
@@ -37,6 +37,23 @@
 			0% {opacity: 1; color: #8D6E63;}
 			50% {opacity: 0; color: #e64a19;}
 			100% {opacity: 1; color: #8D6E63;}
+		}
+		
+		h1 {
+			color: #e64a19;
+			font-style: italic;
+		}
+
+		#projects {
+			text-align: center;
+		}
+
+		a {
+			color: #e64a19;
+		}
+
+		a:hover {
+			font-weight: bold;
 		}
 	</style>
 
@@ -72,6 +89,20 @@
 				</skill-listing>
 			</template>
 		</section>
+
+		<section id="projects">
+			<h1>Projects</h1>
+			<template is="dom-repeat" items="{{projects}}">
+				<project-listing
+					id="{{item.id}}"
+					title="{{item.title}}"
+					date="{{item.date}}"
+					description="{{item.description}}"
+					url="{{item.url}}"
+					image="{{item.image}}">
+				</project-listing>
+			</template>
+		</section>
 	</template>
 </dom-module>
 
@@ -90,6 +121,27 @@
 				'Knockout.js',
 				'Polymer Components',
 				'Build Tools'
+			]
+
+			this.projects = [
+				{
+					title: 'Capital Coffee',
+					date: 2016,
+					description: 'A single page application using the Knockout.js framework along with Bootstrap, jQuery, ' +
+								 'Google Maps API, REST Countries API and Foursquare API to populate a list of coffee shops ' +
+								 'in a world capital of the user\'s choice. This application uses local storage to store a list of favorite shops.',
+					url: 'http://ncaron.github.io/Capital-Coffee/',
+					image: '../images/capital_coffee.jpg'
+				},
+				{
+					title: 'Arcade Game Clone',
+					date: 2015,
+					description: 'Using Udacity\'s provided visual assets and game loop engine, add a number of entities to the ' +
+								 'game including the player character and enemies to recreate the arcade game Frogger. (Curently, ' +
+								 'going to this project\'s page will bring you to my old portfolio website).',
+					url: 'http://ncaron.github.io/frontend-nanodegree-arcade-game/',
+					image: '../images/arcade_game.jpg'
+				}
 			]
 		}
 	});
