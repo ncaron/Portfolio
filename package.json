@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack -p",
     "start": "webpack-dev-server --open --hot",
-    "predeploy": "nmp run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
