@@ -3,18 +3,6 @@ import PropTypes from 'prop-types';
 import Background from '../Background';
 import Icons from '../Icons';
 
-const getAge = () => {
-  const today = new Date();
-  const birthDate = new Date('1990/01/19');
-  let age = today.getFullYear() - birthDate.getFullYear();
-
-  if (today.getMonth() < birthDate.getMonth() || today.getDate() < birthDate.getDate()) {
-    age--;
-  }
-
-  return age;
-};
-
 const About = ({location}) => {
   const profilePic = require('./profile-pic.jpg');
 
