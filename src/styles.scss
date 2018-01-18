@@ -101,7 +101,11 @@ body {
     }
   }
 
-  @media(max-width: 500px) { font-size: 4em; }
+  @media(max-width: 500px) {
+    font-size: 4em;
+    padding-top: 30px;
+  }
+  
   @media(max-height: 500px) { font-size: 3em; }
 }
 
