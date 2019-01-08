@@ -12,8 +12,8 @@ const About = ({location}) => {
       <div className="about-container">
         <img className="profile-pic" src={ profilePic } alt="My photo" />
         <p className="about-me">
-          Hi, I'm Niko, a web developer. I'm located in Canada but wishing to relocate to Berlin, Germany one day(soon) or elsewhere in Canada/USA!
-          Coding is my passion, I can't stop thinking about it and I'm excited to start my career as a frontend web developer!
+          Hi, I'm Niko, a web developer from Canada but living in Berlin, I relocated here for my first ever software job and loving every bit of it so far!
+          Coding is my passion, I can't stop thinking about it and I'm excited to continue my career as a frontend web developer.
         </p>
       </div>
       <Icons location={ location.pathname } />

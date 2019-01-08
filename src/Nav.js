@@ -6,6 +6,7 @@ const Nav = ({triggerSidebar}) => {
   return (
     <nav>
       <NavLink activeClassName="active" exact to="/" onClick={ triggerSidebar }>Home</NavLink>
+      <NavLink to="/employments" onClick={ triggerSidebar }>Employment</NavLink>
       <NavLink to="/projects" onClick={ triggerSidebar }>Projects</NavLink>
       <NavLink to="/about" onClick={ triggerSidebar }>About</NavLink>
     </nav>

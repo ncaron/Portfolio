@@ -63,7 +63,7 @@ body {
   .future { font-size: 1.2em; }
   
   .status {
-    color: #1ae73c;
+    color: #e03030;
     font-weight: bold;
   }
 
@@ -111,7 +111,6 @@ body {
 
 
 /* ICONS */
-
 .icon {
   position: absolute;
   width: $icon-size-desktop;
@@ -460,6 +459,70 @@ footer {
       color: white;
       font-weight: bold;
     }
+  }
+
+  @media(max-width: 1250px) {
+    width: ($projects-container-width-medium / 2) - 40;
+  }
+
+  @media(max-width: 850px) {
+    width: ($projects-container-width-small / 2) - 40;
+    font-size: .75em;
+  }
+
+  @media(max-width: 650px) {
+    width: 75%;
+    font-size: 1em;
+  }
+}
+
+
+/* EMPLOYMENTS PAGE */
+.employment {
+  position: relative;
+  display: inline-block;
+  background: white;
+  width: ($projects-container-width-large / 3) - 40;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px black;
+  transition: all 1s;
+
+  a {
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .description {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .brief {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    padding: 10px 0;
+
+    h4, p { text-align: center; }
+  }
+
+  .employment-info {
+    color: black;
+    padding-top: 20px;
+    text-align: center;
   }
 
   @media(max-width: 1250px) {
