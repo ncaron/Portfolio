@@ -1,0 +1,20 @@
+.topHalf,
+.bottomHalf {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50%;
+  z-index: -1;
+}
+
+.topHalf {
+  background: black;
+  box-shadow: 0 10px 30px 15px black;
+}
+
+.bottomHalf {
+  top: 50%;
+  background: #c5e1a5;
+  transition: all 1s;
+  z-index: -2;
+}

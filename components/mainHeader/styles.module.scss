@@ -1,0 +1,25 @@
+.container {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0.75;
+  transform: translateY(-125%);
+  top: 50%;
+  transition: all 2s;
+
+  @media (max-width: 500px) {
+    font-size: 0.8em;
+  }
+
+  @media (max-height: 500px) {
+    font-size: 0.8em;
+  }
+}
+
+.tag {
+  font-size: 1.2em;
+}
+
+.title {
+  font-size: 2em;
+}

@@ -1,0 +1,32 @@
+.link {
+  display: block;
+  color: black;
+  width: 100%;
+  font-size: 2em;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 1s;
+
+  &:hover {
+    background: lightgray;
+  }
+  &.active {
+    background: gray;
+  }
+
+  @media (max-height: 800px) {
+    font-size: 1.6em;
+  }
+
+  @media (max-height: 600px) {
+    font-size: 1.2em;
+    padding: 10px 0;
+  }
+
+  @media (max-height: 500px) {
+    display: inline-block;
+    font-size: 1em;
+    width: 33.33%;
+  }
+}

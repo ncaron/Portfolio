@@ -1,45 +1,28 @@
 {
-  "name": "Portfolio",
-  "version": "2.0.0",
-  "description": "My portfolio for web development.",
-  "main": "index.js",
-  "repository": "https://github.com/ncaron/Portfolio.git",
-  "author": "Niko Caron <niko.caron90@gmail.com>",
-  "license": "MIT",
+  "name": "portfolio",
+  "private": true,
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server --open --hot",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.8",
-    "eslint": "^4.15.0",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-react": "^7.5.1",
-    "file-loader": "^1.1.6",
-    "gh-pages": "^1.1.0",
-    "node-sass": "^4.7.2",
-    "postcss-loader": "^2.0.10",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.1",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.2",
-    "@fortawesome/fontawesome-free-brands": "^5.0.4",
-    "@fortawesome/fontawesome-free-solid": "^5.0.4",
-    "@fortawesome/react-fontawesome": "^0.0.17",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-ga": "^2.4.1",
-    "react-router-dom": "^4.2.2",
-    "reset-css": "^2.2.1"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "classnames": "^2.3.1",
+    "devicon": "^2.14.0",
+    "next": "12.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "reset-css": "^5.0.1",
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.6",
+    "@types/react": "17.0.34",
+    "eslint": "7",
+    "eslint-config-next": "12.0.3",
+    "prettier": "^2.4.1",
+    "typescript": "4.4.4"
   }
 }

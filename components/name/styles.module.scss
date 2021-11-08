@@ -1,0 +1,25 @@
+.container {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  font-size: 7.5em;
+  text-align: center;
+  user-select: none;
+  transition: all 2s;
+
+  @media (max-width: 800px) {
+    font-size: 5em;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 4em;
+  }
+
+  @media (max-height: 725px) {
+    font-size: 4em;
+  }
+
+  @media (max-height: 500px) {
+    font-size: 2.5em;
+  }
+}

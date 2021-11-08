@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+
+  img {
+    margin: 0 auto;
+    border-radius: 100%;
+  }
+
+  @media (max-height: 600px) {
+    display: none;
+  }
+}
