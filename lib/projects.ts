@@ -56,7 +56,7 @@ export const projects: ProjectsProps = {
         'devicon-react-original colored',
       ],
       links: {
-        live: 'https://ncaron.github.io/world-through-postcards/',
+        live: 'https://world-through-postcards.vercel.app/',
         code: 'https://github.com/ncaron/world-through-postcards',
       },
     },
